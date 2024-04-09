@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Formulário</h3>
+    <form name="mostrar" method="post" action="mostrar.php">
+        <p>
+            <label>Nome do Funcionário:</label>
+            <input type="text" name="nome" min="1" max="10000" required>
+        </p>
+
+        <p>
+            <label>Data de Admissão:</label>
+            <input type="text" name="data"  maxlength="60" size="40" required>
+        </p>
+
+
+        <p>
+            <label>Salário:</label><br>
+            <input type="number" name="salario"  step="0.01" min="1" max="10000" required>
+        </p>
+
+        <p>
+            <label>Cargo:</label>
+            <input type="text" name="cargo"  maxlength="60" size="40" required>
+        </p>
+
+        <p>
+            <label>% INSS:</label><br>
+            <input type="number" name="PercentualAumento"  step="0.01" min="1" max="100" required>
+        </p>
+
+        <input type="submit" name="mostrar" value="Mostrar">
+        <input type="reset" name="limpar" value="Limpar">
+    </form>
+</body>
+</html>
